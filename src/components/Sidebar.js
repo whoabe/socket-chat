@@ -5,11 +5,11 @@ export default class Sidebar extends Component {
     return (
       <div id="side-bar">
         <div>
-          <h5>Number of users online: {this.props.users.length}</h5>
+          <h4>Users online: {this.props.users.length}</h4>
         </div>
         <div className="user-list">
           {this.props.users.map(user => {
-            return <div>{user.username}</div>;
+            return <div className="online-user">{user.username}</div>;
           })}
         </div>
       </div>

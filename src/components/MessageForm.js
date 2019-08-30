@@ -105,8 +105,9 @@ export default class MessageForm extends Component {
             onChange={this.handleInput}
             autoFocus={true}
             autoComplete={"off"}
+            className="form-control"
           />
-          <button className="send">Submit</button>
+          {/* <button className="send">Submit</button> */}
         </form>
       </div>
     );
